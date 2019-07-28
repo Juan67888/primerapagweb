@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <form class= "formulario",>
+                <h1>Accede a tu cuenta</h1>
+                <div class="contenedor">
+        
+                    <div class="input-contenedor">
+                            <i class="fas fa-mail-bulk icon"></i>
+                        <input type="text" placeholder="Usuario" name="usuario"></input>
+                           
+                        </div>
+                    <div class="input-contenedor">
+                            <i class="fas fa-key icon"></i>
+                        <input type="password" placeholder="Contraseña" name="contraseña"></input>
+                               
+                        </div>
+                        <input type="submit" value="Acceder" class="button" href="{{ url_for('home') }}">
+                        <p>Al registrarte, aceptas nestras Condiciones de uso y Política de privacidad</p>
+                        <p>¿No tienes cuenta? <a class="link" href={{ url_for('registro') }}>Registrate</a></p>
+                        <link rel="stylesheet" href="{{ url_for('static', filename='css/estilos.css') }}"
+            </div>
+            </form>
+</body>
+</html>

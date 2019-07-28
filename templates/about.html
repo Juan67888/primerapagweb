@@ -1,5 +1,29 @@
 {% extends "layout.html" %}
 
 {% block content%}
-<h1>About</h1>
+<h1>Opciones para Empezar</h1>
+<div class="card">
+        <h5 class="card-header">Lista de la compra</h5>
+        <div class="card-body">
+          <h5 class="card-title">Anota aquí todo lo que hace falta para comprar!</h5>
+          <p class="card-text">Haz click en el botón para empezar</p>
+          <a href="{{url_for('ListaCompra')}}" class="btn btn-warning">Empezar</a>
+        </div>
+      </div>
+      <div class="card">
+          <h5 class="card-header">Otra Opcion</h5>
+          <div class="card-body">
+            <h5 class="card-title">Anota aquí todo lo que hace falta </h5>
+            <p class="card-text">Haz click en el botón para empezar</p>
+            <a href="ListaCompra.html" class="btn btn-success">Empezar</a>
+          </div>
+        </div>
+        <div class="card">
+            <h5 class="card-header">Otra Opcion</h5>
+            <div class="card-body">
+              <h5 class="card-title">Anota aquí todo lo que hace falta</h5>
+              <p class="card-text">Haz click en el botón para empezar</p>
+              <a href="ListaCompra.html" class="btn btn-danger">Empezar</a>
+            </div>
+          </div>
 {% endblock %}
